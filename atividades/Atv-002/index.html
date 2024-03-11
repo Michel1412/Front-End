@@ -9,30 +9,108 @@
 <body>
 
     <header>
-        <h1>Meu Site da Divisão Semântica</h1>
+        <h1>Meu Site - Divisão Semântica</h1>
+
+        <nav>
+            <ul class="nav-list">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../geral/Dev.html">Sobre Mim</a>
+                </li>
+                <li>
+                    <a href="../Atv-001/index.html">Atv-001</a>
+                </li>
+                <li>
+                    <a href="./Exemplo_aula/index.html">Exemplo Nav</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="../geral/Dev.html">Sobre Mim</a>
-        <a href="../Atv-001/index.html">Atv-001</a>
-    </nav>
 
     <section>
-        <ul>
+        <form id="Evento">
             <h2>Formulário de incrição</h2>
-            <h4>Nome</h4>
-            <input type="text">
-            <h4>E-mail</h4>
-            <input type="text">
-            <input type="">
-        </ul>
+            
+            <label for="name">Nome</label>
+            <input type="text" placeholder="Digite seu nome" id="name" required>
+            
+            <label for="email">E-mail</label>
+            <input type="text" placeholder="Digite seu e-mail" id="email" required>
+            
+            <label for="type">Tipo de inscrição</label>
+            <select id="type" required>
+                <option value="invalido"></option>    
+                <option value="participante">Participante</option>    
+                <option value="palestrante">Palestrante</option>
+                <option value="voluntario">Voluntário</option>
+            </select>
+
+            <div class="checkbox">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">Termos de uso</label>
+            </div>
+            
+            <button onclick="putInTable()">
+                Inscreva-se
+            </button>
+        </form>    
     </section>
+
+    <section>
+        <table id="eventTable">
+            <th></th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Tipo inscrição</th>
+            <tr>
+                <td>1</td>
+                <td>Michel</td>
+                <td>michelbocchijr@gmail.com</td>
+                <td>Palestrante</td>
+            </tr> 
+        </table>
+    </section>
+
+    <script>
+        var numId = 2;
+
+        function putInTable() {
+            var name  = document.getElementById('name').value ;
+            var email = document.getElementById('email').value ;
+            var type  = document.getElementById('type').value ;
+
+            var eventTable = document.getElementById('eventTable');
+
+            var row = eventTable.insertRow(-1);
+
+            var cellId    = row.insertCell(0);
+            var cellName  = row.insertCell(1);
+            var cellEmail = row.insertCell(2);
+            var cellType  = row.insertCell(3);
+
+            cellId.innerHTML    = numId++; 
+            cellName.innerHTML  = name; 
+            cellEmail.innerHTML = email; 
+            cellType.innerHTML  = type; 
+
+            document.getElementById('nome').value  = "";
+            document.getElementById('email').value = "";
+            document.getElementById('type').value  = "invalido";
+            document.getElementById('terms').checked = false;
+        }
+    </script>
 
     <footer>
         <p>2024. Direitos reservados.</p>
-        <a href="https://github.com/Michel1412/Front-End/tree/develop">GitHub</a>
-        <a href="">Instagram</a>
+        <a href="https://github.com/Michel1412/Front-End/tree/develop">
+            <button>GitHub</button>
+        </a>
+        <a href="https://www.instagram.com/_bocchi_michel?igsh=MWJteXV6OWRoa2prOA==">
+            <button>Instagram</button>
+        </a>
     </footer>
 
 </body>

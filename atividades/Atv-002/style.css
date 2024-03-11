@@ -2,26 +2,49 @@ body {
     margin: 0px;
     padding: 0px;    
     text-decoration: none;
-    background-color: rgb(32, 28, 28);
+    background-color: gainsboro;
 }
 
 header {
+    left: 2.5%;
+    width: 95%;
     color: black;
-    padding: 20px 0px;
+    position: relative;
     text-align: center;
-    background-color: darkolivegreen;
+    margin: 0%;
 }
 
-nav {
+header h1 {
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;  
+    background-color: darkolivegreen;    
+}
+
+header nav {
+    left: 50%;
     padding: 5px 0px;
+    position: relative;
     text-align: center;
-    background-color: gainsboro;
+    transform: translateX(-50%);
+}
+
+*{
+    list-style: none;
+}
+
+.nav-list {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
 }
 
 nav a{
     padding: 5px;
-    color: blueviolet;
-    background-color: aliceblue;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: rgb(59, 3, 124);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -38,23 +61,91 @@ section {
     padding: 20px;
     height: 300px;
     background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-section ul{
-    display: grid;
-    text-align: center;
-    padding: 10px 20px;
+section table {
+    left: 50%;
+    min-width: 75%;
+    max-width: 85%;
+    position: relative;
+    transform: translateX(-50%);
+    border: 1px solid black;
     background-color: white;
 }
 
-footer {
-    padding: 10px;
-    color: black;
-    text-align: center;
-    background-color: cadetblue;
+section table th {
+    border: 1px solid black; 
 }
 
-footer a{
-    padding: 5px 20px;
+section form {
+    left: 50%;
+    display: grid;
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    padding: 10px 20px;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+section form {
+    text-align: left;
+}
+
+section form h2 {
+    text-align: center;
+}
+
+section form input {
+    width: 95%;
+    height: 30px;
+}
+
+section form select {
+    width: 95%;
+    height: 30px;
+}
+
+section form button {
+    width: 95%;
+    padding: 10px;
+    color: white;
+    border: #4287f5;
+    border-radius: 5px;
+    background-color: #4287f5;
+}
+
+.checkbox label {
+    margin-left: 5px;
+}
+
+.checkbox input {
+    width: 15px;
+}
+
+.checkbox {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    left: 50%;
+    bottom: 0px;
+    width: 100vw;
+    color: whitesmoke;
+    position: fixed;
+    text-align: center;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+footer button {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(59, 3, 124);
 }
 
