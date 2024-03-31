@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Chess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="resetImg()">
+    <header>
+        <h3>Jogo de xadrez</h3>
+    </header>
+
+    <table>
+        <tr>
+            <td class="escuro" onclick="lookOpts(0, 0)"><img src="#">torre p</td> 
+            <td class="claro"  onclick="lookOpts(1, 0)"><img src="#">cavalo p</td>
+            <td class="escuro" onclick="lookOpts(2, 0)"><img src="#">bispo p</td> 
+            <td class="claro"  onclick="lookOpts(3, 0)"><img src="#">Rei p</td> 
+            <td class="escuro" onclick="lookOpts(4, 0)"><img src="#">Dama p</td> 
+            <td class="claro"  onclick="lookOpts(5, 0)"><img src="#">bispo p</td> 
+            <td class="escuro" onclick="lookOpts(6, 0)"><img src="#">cavalo p</td> 
+            <td class="claro"  onclick="lookOpts(7, 0)"><img src="#">torre p</td> 
+        </tr>
+        
+        <tr>
+            <td class="claro"  onclick="lookOpts(0, 1)"><img src="#">peao p</td> 
+            <td class="escuro" onclick="lookOpts(1, 1)"><img src="#">peao p</td>
+            <td class="claro"  onclick="lookOpts(2, 1)"><img src="#">peao p</td> 
+            <td class="escuro" onclick="lookOpts(3, 1)"><img src="#">peao p</td>
+            <td class="claro"  onclick="lookOpts(4, 1)"><img src="#">peao p</td> 
+            <td class="escuro" onclick="lookOpts(5, 1)"><img src="#">peao p</td>
+            <td class="claro"  onclick="lookOpts(6, 1)"><img src="#">peao p</td> 
+            <td class="escuro" onclick="lookOpts(7, 1)"><img src="#">peao p</td>
+        </tr>
+        
+        <tr>
+            <td class="escuro" onclick="lookOpts(0, 2)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(1, 2)"><img src="#"></td>
+            <td class="escuro" onclick="lookOpts(2, 2)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(3, 2)"><img src="#"></td> 
+            <td class="escuro" onclick="lookOpts(4, 2)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(5, 2)"><img src="#"></td> 
+            <td class="escuro" onclick="lookOpts(6, 2)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(7, 2)"><img src="#"></td> 
+        </tr>
+        
+        <tr>
+            <td class="claro"  onclick="lookOpts(0, 3)"><img src="#"></td>
+            <td class="escuro" onclick="lookOpts(1, 3)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(2, 3)"><img src="#"></td> 
+            <td class="escuro" onclick="lookOpts(3, 3)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(4, 3)"><img src="#"></td> 
+            <td class="escuro" onclick="lookOpts(5, 3)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(6, 3)"><img src="#"></td> 
+            <td class="escuro" onclick="lookOpts(7, 3)"><img src="#"></td> 
+        </tr>
+
+        <tr>
+            <td class="escuro" onclick="lookOpts(0, 4)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(1, 4)"><img src="#"></td>
+            <td class="escuro" onclick="lookOpts(2, 4)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(3, 4)"><img src="#"></td> 
+            <td class="escuro" onclick="lookOpts(4, 4)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(5, 4)"><img src="#"></td> 
+            <td class="escuro" onclick="lookOpts(6, 4)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(7, 4)"><img src="#"></td> 
+        </tr>
+
+        <tr>
+            <td class="claro"  onclick="lookOpts(0, 5)"><img src="#"></td>
+            <td class="escuro" onclick="lookOpts(1, 5)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(2, 5)"><img src="#"></td> 
+            <td class="escuro" onclick="lookOpts(3, 5)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(4, 5)"><img src="#"></td> 
+            <td class="escuro" onclick="lookOpts(5, 5)"><img src="#"></td> 
+            <td class="claro"  onclick="lookOpts(6, 5)"><img src="#"></td> 
+            <td class="escuro" onclick="lookOpts(7, 5)"><img src="#"></td> 
+        </tr>
+
+        <tr>
+            <td class="escuro" onclick="lookOpts(0, 6)"><img src="#">peao b</td>
+            <td class="claro"  onclick="lookOpts(1, 6)"><img src="#">peao b</td> 
+            <td class="escuro" onclick="lookOpts(2, 6)"><img src="#">peao b</td>
+            <td class="claro"  onclick="lookOpts(3, 6)"><img src="#">peao b</td> 
+            <td class="escuro" onclick="lookOpts(4, 6)"><img src="#">peao b</td>
+            <td class="claro"  onclick="lookOpts(5, 6)"><img src="#">peao b</td> 
+            <td class="escuro" onclick="lookOpts(6, 6)"><img src="#">peao b</td>
+            <td class="claro"  onclick="lookOpts(7, 6)"><img src="#">peao b</td> 
+        </tr>
+        
+        <tr>
+            <td class="claro"  onclick="lookOpts(0, 7)"><img src="#">torre b</td> 
+            <td class="escuro" onclick="lookOpts(1, 7)"><img src="#">cavalo b</td> 
+            <td class="claro"  onclick="lookOpts(2, 7)"><img src="#">bispo b</td> 
+            <td class="escuro" onclick="lookOpts(3, 7)"><img src="#">Rei b</td> 
+            <td class="claro"  onclick="lookOpts(4, 7)"><img src="#">Dama b</td> 
+            <td class="escuro" onclick="lookOpts(5, 7)"><img src="#">bispo b</td> 
+            <td class="claro"  onclick="lookOpts(6, 7)"><img src="#">cavalo b</td>
+            <td class="escuro" onclick="lookOpts(7, 7)"><img src="#">torre b</td> 
+        </tr>
+        
+    </table>
+
+</body>
+<script src="script.js"></script>
+</html>

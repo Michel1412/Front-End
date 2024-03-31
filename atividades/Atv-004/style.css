@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(65, 64, 64);
+    text-align: center;
+}
+
+header {
+    color: white;
+    max-height: 20px;
+    text-align: center;
+}
+
+table {
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    background-color: black;
+}
+
+table tr td {
+    color: transparent;
+    width: 70px;
+    height: 70px;
+}
+
+table tr td img {
+    width: 100%;
+    height: 100%;
+}
+
+table td:hover {
+    background-color: rgb(231, 206, 160);
+}
+
+img .preto {
+    color: #000000;
+}
+
+img .branca {
+    color: #ffffff;
+}
+
+.escuro {
+    background-color: #808080;
+}
+
+.claro {
+    background-color: #f0f8ff;
+}

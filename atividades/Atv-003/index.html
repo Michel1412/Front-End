@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jogo de Palavras</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Meu Termo</h1>
+    <div id=".quadros">
+        <div class="linha">
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+        </div>
+        <div class="linha">
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+        </div>
+        <div class="linha">
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+        </div>
+        <div class="linha">
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+        </div>
+        <div class="linha">
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+            <div class="quadro"></div>
+        </div>
+    </div>
+    <br><br><br>
+    <div id="teclado">
+        <table class="teclado">
+            <tr>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">Q</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">W</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">E</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">R</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">T</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">Y</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">U</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">I</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">O</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">P</td>
+            </tr>
+            <tr>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">A</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">S</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">D</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">F</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">G</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">H</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">J</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">K</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">L</td>
+            </tr>
+            <tr>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">Z</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">X</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">C</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">V</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">B</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">N</td>
+                <td class="tecla" onclick="colocaQuadradoPula(this)">M</td>
+            </tr>
+        </table>
+        <table id="commandTable">
+            <tr>
+                <td><button class="buttonTecla" onclick="verificar()">Verificar</button></td>
+                <td><button class="buttonTecla" onclick="remover()">Remover</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
