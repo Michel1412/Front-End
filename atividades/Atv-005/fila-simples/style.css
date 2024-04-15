@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    padding: 0px 10px;
+    background-color: grey;
+    border: 1.5px orangered solid;
+}
+
+input {
+    margin: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    color: antiquewhite;
+    border: 2px gray solid;
+    background-color: black;
+}
